@@ -1,88 +1,88 @@
 {
 :lang :egyptian-middle
-:sgpref "egm"
 :subfamily "Egyptian"
+:sgpref "egm"
 :datasource "Gardiner1957"
 :geodemoURL "http://www.britannica.com/topic/Egyptian-language https://en.wikipedia.org/wiki/Languages_of_Egypt"
 :geodemoTXT "Middle Egyptian is the 'Classic' form of the written language, possibly representing the spoken form of the language in late third and early second millennium BCE."
-:schemata {
-           :gender [:Common, :Fem, :Masc]
-	  :number [:Dual, :Plural, :Singular]
-	  :person [:Person1, :Person2, :Person3 :Not_in_datastore]
-	  :pos [:Pronoun, :Verb]
-	  :proClass [:Dependent, :Independent, :Suffix]
-           :status [:NA]
-	  }
-:pclass {
-           :pngClass [:person :number :gender ]
-           :synsemClass [:pos :proClass ]
-           :inflClass [:status  ]
-           :otherClass [ ]
-          }
-:morphemes {
-  :PRODEPENDENT {:gloss "[x]", :lemma "[y]", }
-  :PROIND {:gloss "[x]", :lemma "[y]", }
-  :PROSUFF {:gloss "[x]", :lemma "[y]", }
-}
-:lexemes {
-}
+:schemata{:gender [:Common :Fem :Masc],
+          :number [:Dual :Plural :Singular],
+          :person [:Person1 :Person2 :Person3 :Not_in_datastore],
+          :pdgmType [:Finite :NA]
+          :pos [:Pronoun :Verb],
+          :proClass [:Dependent :Independent :Suffix],
+          :status [:NA]}
+:pclass {:pngClass [:person :number :gender],
+          :synsemClass [:pos :proClass],
+          :inflClass [:status],
+          :otherClass []}
+:morphemes{:PRODEPENDENT {:gloss "[x]", :lemma "[y]"},
+           :PROIND {:gloss "[x]", :lemma "[y]"},
+           :PROSUFF {:gloss "[x]", :lemma "[y]"}}
+:lexemes{}
 :lxterms [
     {:label "Egyptian_Verb_to_be_added_to_datastore"
+    :pdgmType :Finite
     :common {:pos :Verb}
-    :terms [[:status :person :token] ;; schema
+    :terms [[:status :person :token],
             [:NA :Not_in_datastore "not attested"]]
     }
 ]
 :muterms [
     {:label "egyptian_M-PDep"
     :note "Alan Gardiner,Egyptian Grammar,3rd Edition (Oxford:Griffith Institute,2001),§43. James E. Hoch,Middle Egyptian Grammar (Mississauga:Benben Publications,1997),§39."
+    :pdgmType :NA
     :common {:morpheme :PRODEPENDENT,
-            :pos :Pronoun,
-            :proClass :Dependent}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "wἰ"]
-            [:Singular :Person2 :Masc "ṯw ~ tw"]
-            [:Singular :Person2 :Fem "ṯn ~ tn"]
-            [:Singular :Person3 :Masc "sw"]
-            [:Singular :Person3 :Fem "sy ~ s ~ st"]
-            [:Plural :Person1 :Common "neut"]
-            [:Plural :Person2 :Common "ṯn ~ tn"]
+             :pos :Pronoun,
+             :proClass :Dependent}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "wἰ"],
+            [:Singular :Person2 :Masc "ṯw ~ tw"],
+            [:Singular :Person2 :Fem "ṯn ~ tn"],
+            [:Singular :Person3 :Masc "sw"],
+            [:Singular :Person3 :Fem "sy ~ s ~ st"],
+            [:Plural :Person1 :Common "neut"],
+            [:Plural :Person2 :Common "ṯn ~ tn"],
             [:Plural :Person3 :Common "sn"]]
     }
     {:label "egyptian_M-PInd"
     :note "Alan Gardiner,Egyptian Grammar,3rd Edition (Oxford:Griffith Institute,2001),§64. James E. Hoch,Middle Egyptian Grammar (Mississauga:Benben Publications,1997),§56."
+    :pdgmType :NA
     :common {:morpheme :PROIND,
-            :pos :Pronoun,
-            :proClass :Independent}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "ἰnk"]
-            [:Singular :Person2 :Masc "ntk"]
-            [:Singular :Person2 :Fem "ntṯ"]
-            [:Singular :Person3 :Masc "ntf"]
-            [:Singular :Person3 :Fem "nts"]
-            [:Plural :Person1 :Common "ἰnn"]
-            [:Plural :Person2 :Common "ntṯn ~ nttn"]
+             :pos :Pronoun,
+             :proClass :Independent}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "ἰnk"],
+            [:Singular :Person2 :Masc "ntk"],
+            [:Singular :Person2 :Fem "ntṯ"],
+            [:Singular :Person3 :Masc "ntf"],
+            [:Singular :Person3 :Fem "nts"],
+            [:Plural :Person1 :Common "ἰnn"],
+            [:Plural :Person2 :Common "ntṯn ~ nttn"],
             [:Plural :Person3 :Common "ntsn"]]
     }
     {:label "egyptian_M-PSuff"
     :note "Alan Gardiner,Egyptian Grammar,3rd Edition (Oxford:Griffith Institute,2001),§34. James E. Hoch,Middle Egyptian Grammar (Mississauga:Benben Publications,1997),§23. Note existence of the dual set of suffix pronouns."
+    :pdgmType :NA
     :common {:morpheme :PROSUFF,
-            :pos :Pronoun,
-            :proClass :Suffix}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "⊤"]
-            [:Singular :Person2 :Masc "-k"]
-            [:Singular :Person2 :Fem "-ṯ ~ -t"]
-            [:Singular :Person3 :Masc "-f"]
-            [:Singular :Person3 :Fem "-s"]
-            [:Plural :Person1 :Common "-n"]
-            [:Plural :Person2 :Common "-ṯn ~ -tn"]
-            [:Plural :Person3 :Common "-sn"]
-            [:Dual :Person1 :Common "-ny"]
-            [:Dual :Person2 :Common "-ṯny"]
-            [:Dual :Person3 :Masc "-fy"]
-            [:Dual :Person3 :Fem "-sy"]
+             :pos :Pronoun,
+             :proClass :Suffix}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "⊤"],
+            [:Singular :Person2 :Masc "-k"],
+            [:Singular :Person2 :Fem "-ṯ ~ -t"],
+            [:Singular :Person3 :Masc "-f"],
+            [:Singular :Person3 :Fem "-s"],
+            [:Plural :Person1 :Common "-n"],
+            [:Plural :Person2 :Common "-ṯn ~ -tn"],
+            [:Plural :Person3 :Common "-sn"],
+            [:Dual :Person1 :Common "-ny"],
+            [:Dual :Person2 :Common "-ṯny"],
+            [:Dual :Person3 :Masc "-fy"],
+            [:Dual :Person3 :Fem "-sy"],
             [:Dual :Person3 :Common "-sny"]]
     }
 ]
 }
+ 
+ 
