@@ -11,7 +11,11 @@
           :pdgmType [:Finite :NA]
           :pos [:Pronoun :Verb],
           :proClass [:Dependent :Independent :Suffix],
-          :status [:NA]}
+          :status [:NA]
+          :rootClass [:CC :C1C2C2 :CCC :CCY :C1C2C3C3 :CCCC :CCCY :CCCCCC :SCC :SC1C2C2 :SCCC :SCCY :JJJ :JWJ :RDJ :DJ]
+          :stem [:Base :N :JN :HR :KA :T]
+          :tam [:Imperfective :Preterite :Stative]
+          }
 :pclass {:pngClass [:person :number :gender],
           :synsemClass [:pos :proClass],
           :inflClass [:status],
@@ -19,13 +23,65 @@
 :morphemes{:PRODEPENDENT {:gloss "[x]", :lemma "[y]"},
            :PROIND {:gloss "[x]", :lemma "[y]"},
            :PROSUFF {:gloss "[x]", :lemma "[y]"}}
-:lexemes{}
+:lexemes{ :sdm {:rootClass :CCC, :lemma "sḏm", :gloss "hear"}
+}
+
 :lxterms [
-    {:label "Egyptian_Verb_to_be_added_to_datastore"
+    {:label "egyptian_M-VAffCCCsdm-f"
     :pdgmType :Finite
-    :common {:pos :Verb}
-    :terms [[:status :person :token],
-            [:NA :Not_in_datastore "not attested"]]
+    :common {:lexeme :sdm,
+             :polarity :Affirmative,
+             :morphClass :Finite,
+             :pos :Verb,
+             :rootClass :CCC,
+             :stem :Base
+             :tam :Imperfective}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "sḏm-j"],
+            [:Singular :Person2 :Masc "sḏm-k"],
+            [:Singular :Person2 :Fem "sḏm-ṯ"],
+            [:Singular :Person3 :Masc "sḏm-f"],
+            [:Singular :Person3 :Fem "sḏm-s"],
+            [:Plural :Person1 :Common "sḏm-n"],
+            [:Plural :Person2 :Common "sḏmn-ṯn"],
+            [:Plural :Person3 :Common "sḏm-sn"]]
+    }
+    {:label "egyptian_M-VAffCCCsdm-n-f"
+    :pdgmType :Finite
+    :common {:lexeme :sdm,
+             :polarity :Affirmative,
+             :morphClass :Finite,
+             :pos :Verb,
+             :rootClass :CCC,
+             :stem :N
+             :tam :Preterite}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "sḏm.n-j"],
+            [:Singular :Person2 :Masc "sḏm.n-k"],
+            [:Singular :Person2 :Fem "sḏm.n-ṯ"],
+            [:Singular :Person3 :Masc "sḏm.n-f"],
+            [:Singular :Person3 :Fem "sḏm.n-s"],
+            [:Plural :Person1 :Common "sḏm.n-n"],
+            [:Plural :Person2 :Common "sḏm.n-ṯn"],
+            [:Plural :Person3 :Common "sḏm.n-sn"]]
+    }
+    {:label "egyptian_M-VAffCCCStative"
+    :pdgmType :Finite
+    :common {:lexeme :sdm,
+             :polarity :Affirmative,
+             :morphClass :Finite,
+             :pos :Verb,
+             :rootClass :CCC,
+             :stem :Base
+             :tam :Stative}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "sḏm-kw"],
+            [:Singular :Person2 :Common "sḏm-tj"],
+            [:Singular :Person3 :Masc "sḏm-w"],
+            [:Singular :Person3 :Fem "sḏm-tj"],
+            [:Plural :Person1 :Common "sḏm-wjn"],
+            [:Plural :Person2 :Common "sḏm-tjwnj"],
+            [:Plural :Person3 :Common "sḏm-wj"]]
     }
 ]
 :muterms [
