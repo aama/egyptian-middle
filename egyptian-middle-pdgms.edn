@@ -97,7 +97,7 @@
             [:Singular :Person2 :Fem "ṯn ~ tn"],
             [:Singular :Person3 :Masc "sw"],
             [:Singular :Person3 :Fem "sy ~ s ~ st"],
-            [:Plural :Person1 :Common "neut"],
+            [:Plural :Person1 :Common "n"],
             [:Plural :Person2 :Common "ṯn ~ tn"],
             [:Plural :Person3 :Common "sn"]]
     }
