@@ -5,17 +5,16 @@
 :datasource "Gardiner1957 "
 :geodemoURL "http://www.britannica.com/topic/Egyptian-language https://en.wikipedia.org/wiki/Languages_of_Egypt"
 :geodemoTXT "Middle Egyptian is the 'Classic' form of the written language, possibly representing the spoken form of the language in late third and early second millennium BCE."
-:schemata{:gender [:Common :Fem :Masc],
-          :number [:Dual :Plural :Singular],
-          :person [:Person1 :Person2 :Person3 :Not_in_datastore],
-          :pdgmType [:Finite :NA]
-          :pos [:Pronoun :Verb],
-          :proClass [:Dependent :Independent :Suffix],
-          :status [:NA]
-          :rootClass [:CC :C1C2C2 :CCC :CCY :C1C2C3C3 :CCCC :CCCY :CCCCCC :SCC :SC1C2C2 :SCCC :SCCY :JJJ :JWJ :RDJ :DJ]
-          :stem [:Base :N :JN :HR :KA :T]
-          :tam [:Imperfective :Preterite :Stative]
-          }
+ :schemata {:polarity [:Affirmative ],
+            :gender [:Common :Fem :Masc],
+            :number [:Dual :Plural :Singular],
+            :person [:Person1 :Person2 :Person3],
+            :pos [:Pronoun :Verb],
+            :proClass [:Dependent :Independent :Suffix],
+            :rootClass [:CC :C1C2C2 :CCC :CCY :C1C2C3C3 :CCCC :CCCY :CCCCCC :SCC :SC1C2C2 :SCCC :SCCY :JJJ :JWJ :RDJ :DJ],
+            :stem [:Base :N],
+            :tam [:Imperfective :Preterite :Stative]
+            :pdgmType [:Finite :PRO]}
 :pclass {:pngClass [:person :number :gender],
           :synsemClass [:pos :proClass],
           :inflClass [:status],
@@ -31,7 +30,6 @@
     :pdgmType :Finite
     :common {:lexeme :sdm,
              :polarity :Affirmative,
-             :morphClass :Finite,
              :pos :Verb,
              :rootClass :CCC,
              :stem :Base
@@ -50,7 +48,6 @@
     :pdgmType :Finite
     :common {:lexeme :sdm,
              :polarity :Affirmative,
-             :morphClass :Finite,
              :pos :Verb,
              :rootClass :CCC,
              :stem :N
@@ -69,7 +66,6 @@
     :pdgmType :Finite
     :common {:lexeme :sdm,
              :polarity :Affirmative,
-             :morphClass :Finite,
              :pos :Verb,
              :rootClass :CCC,
              :stem :Base
@@ -87,9 +83,8 @@
 :muterms [
     {:label "egyptian_M-PDep"
     :note "Alan Gardiner,Egyptian Grammar,3rd Edition (Oxford:Griffith Institute,2001),§43. James E. Hoch,Middle Egyptian Grammar (Mississauga:Benben Publications,1997),§39."
-    :pdgmType :NA
-    :common {:morpheme :PRODEPENDENT,
-             :pos :Pronoun,
+    :pdgmType :PRO
+    :common {:pos :Pronoun,
              :proClass :Dependent}
     :terms [[:number :person :gender :token],
             [:Singular :Person1 :Common "wἰ"],
@@ -103,9 +98,8 @@
     }
     {:label "egyptian_M-PInd"
     :note "Alan Gardiner,Egyptian Grammar,3rd Edition (Oxford:Griffith Institute,2001),§64. James E. Hoch,Middle Egyptian Grammar (Mississauga:Benben Publications,1997),§56."
-    :pdgmType :NA
-    :common {:morpheme :PROIND,
-             :pos :Pronoun,
+    :pdgmType :PRO
+    :common {:pos :Pronoun,
              :proClass :Independent}
     :terms [[:number :person :gender :token],
             [:Singular :Person1 :Common "ἰnk"],
@@ -119,9 +113,8 @@
     }
     {:label "egyptian_M-PSuff"
     :note "Alan Gardiner,Egyptian Grammar,3rd Edition (Oxford:Griffith Institute,2001),§34. James E. Hoch,Middle Egyptian Grammar (Mississauga:Benben Publications,1997),§23. Note existence of the dual set of suffix pronouns."
-    :pdgmType :NA
-    :common {:morpheme :PROSUFF,
-             :pos :Pronoun,
+    :pdgmType :PRO
+    :common {:pos :Pronoun,
              :proClass :Suffix}
     :terms [[:number :person :gender :token],
             [:Singular :Person1 :Common "⊤"],
