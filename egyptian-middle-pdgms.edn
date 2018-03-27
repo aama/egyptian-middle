@@ -1,137 +1,130 @@
 {
-:lang :egyptian-middle
-:subfamily "Egyptian"
-:sgpref "egm"
-:datasource "Gardiner1957 "
-:geodemoURL "http://www.britannica.com/topic/Egyptian-language https://en.wikipedia.org/wiki/Languages_of_Egypt"
-:geodemoTXT "Middle Egyptian is the 'Classic' form of the written language, possibly representing the spoken form of the language in late third and early second millennium BCE."
- :schemata {:polarity [:Affirmative ],
-            :gender [:Common :Fem :Masc],
-            :number [:Dual :Plural :Singular],
-            :person [:Person1 :Person2 :Person3],
-            :pos [:Pronoun :Verb],
-            :proClass [:Dependent :Independent :Suffix],
-            :rootClass [:CC :C1C2C2 :CCC :CCY :C1C2C3C3 :CCCC :CCCY :CCCCCC :SCC :SC1C2C2 :SCCC :SCCY :JJJ :JWJ :RDJ :DJ],
-            :stem [:Base :N],
-            :tam [:Imperfective :Preterite :Stative]
-            :pdgmType [:Finite :PRO]}
-:pclass {:pngClass [:person :number :gender],
+ :lang :egyptian-middle
+ :subfamily "Egyptian"
+ :sgpref "egm"
+ :datasource "Gardiner1957 "
+ :geodemoURL "http://www.britannica.com/topic/Egyptian-language https://en.wikipedia.org/wiki/Languages_of_Egypt"
+ :geodemoTXT "Middle Egyptian is the 'Classic' form of the written language, possibly representing the spoken form of the language in late third and early second millennium BCE."
+:schemata {:gender [:Common :Fem :Masc],
+           :number [:Dual :Plural :Singular],
+           :person [:Person1 :Person2 :Person3],
+           :polarity [:Affirmative],
+           :pos [:Pronoun :Verb],
+           :proClass [:Dependent :Independent :Suffix],
+           :rootClass [:CCC],
+           :stem [:Base :N],
+           :tam [:Imperfective :Preterite :Stative]
+           :vmorphclass [:Finite ]
+           }
+ :pclass {:pngClass [:person :number :gender],
           :synsemClass [:pos :proClass],
           :inflClass [:status],
           :otherClass []}
-:morphemes{:PRODEPENDENT {:gloss "[x]", :lemma "[y]"},
-           :PROIND {:gloss "[x]", :lemma "[y]"},
-           :PROSUFF {:gloss "[x]", :lemma "[y]"}}
-:lexemes{ :sdm {:rootClass :CCC, :lemma "sḏm", :gloss "hear"}
-}
+ :lexemes{ :sdm {:rootClass :CCC, :lemma "sḏm", :gloss "hear"}
+          }
 
-:lxterms [
-    {:label "egyptian_M-VAffCCCsdm-f"
-    :pdgmType :Finite
-    :common {:lexeme :sdm,
-             :polarity :Affirmative,
-             :pos :Verb,
-             :rootClass :CCC,
-             :stem :Base
-             :tam :Imperfective}
-    :terms [[:number :person :gender :token],
-            [:Singular :Person1 :Common "sḏm-j"],
-            [:Singular :Person2 :Masc "sḏm-k"],
-            [:Singular :Person2 :Fem "sḏm-ṯ"],
-            [:Singular :Person3 :Masc "sḏm-f"],
-            [:Singular :Person3 :Fem "sḏm-s"],
-            [:Plural :Person1 :Common "sḏm-n"],
-            [:Plural :Person2 :Common "sḏmn-ṯn"],
-            [:Plural :Person3 :Common "sḏm-sn"]]
-    }
-    {:label "egyptian_M-VAffCCCsdm-n-f"
-    :pdgmType :Finite
-    :common {:lexeme :sdm,
-             :polarity :Affirmative,
-             :pos :Verb,
-             :rootClass :CCC,
-             :stem :N
-             :tam :Preterite}
-    :terms [[:number :person :gender :token],
-            [:Singular :Person1 :Common "sḏm.n-j"],
-            [:Singular :Person2 :Masc "sḏm.n-k"],
-            [:Singular :Person2 :Fem "sḏm.n-ṯ"],
-            [:Singular :Person3 :Masc "sḏm.n-f"],
-            [:Singular :Person3 :Fem "sḏm.n-s"],
-            [:Plural :Person1 :Common "sḏm.n-n"],
-            [:Plural :Person2 :Common "sḏm.n-ṯn"],
-            [:Plural :Person3 :Common "sḏm.n-sn"]]
-    }
-    {:label "egyptian_M-VAffCCCStative"
-    :pdgmType :Finite
-    :common {:lexeme :sdm,
-             :polarity :Affirmative,
-             :pos :Verb,
-             :rootClass :CCC,
-             :stem :Base
-             :tam :Stative}
-    :terms [[:number :person :gender :token],
-            [:Singular :Person1 :Common "sḏm-kw"],
-            [:Singular :Person2 :Common "sḏm-tj"],
-            [:Singular :Person3 :Masc "sḏm-w"],
-            [:Singular :Person3 :Fem "sḏm-tj"],
-            [:Plural :Person1 :Common "sḏm-wjn"],
-            [:Plural :Person2 :Common "sḏm-tjwnj"],
-            [:Plural :Person3 :Common "sḏm-wj"]]
-    }
-]
-:muterms [
-    {:label "egyptian_M-PDep"
-    :note "Alan Gardiner,Egyptian Grammar,3rd Edition (Oxford:Griffith Institute,2001),§43. James E. Hoch,Middle Egyptian Grammar (Mississauga:Benben Publications,1997),§39."
-    :pdgmType :PRO
-    :common {:pos :Pronoun,
-             :proClass :Dependent}
-    :terms [[:number :person :gender :token],
-            [:Singular :Person1 :Common "wἰ"],
-            [:Singular :Person2 :Masc "ṯw ~ tw"],
-            [:Singular :Person2 :Fem "ṯn ~ tn"],
-            [:Singular :Person3 :Masc "sw"],
-            [:Singular :Person3 :Fem "sy ~ s ~ st"],
-            [:Plural :Person1 :Common "n"],
-            [:Plural :Person2 :Common "ṯn ~ tn"],
-            [:Plural :Person3 :Common "sn"]]
-    }
-    {:label "egyptian_M-PInd"
-    :note "Alan Gardiner,Egyptian Grammar,3rd Edition (Oxford:Griffith Institute,2001),§64. James E. Hoch,Middle Egyptian Grammar (Mississauga:Benben Publications,1997),§56."
-    :pdgmType :PRO
-    :common {:pos :Pronoun,
-             :proClass :Independent}
-    :terms [[:number :person :gender :token],
-            [:Singular :Person1 :Common "ἰnk"],
-            [:Singular :Person2 :Masc "ntk"],
-            [:Singular :Person2 :Fem "ntṯ"],
-            [:Singular :Person3 :Masc "ntf"],
-            [:Singular :Person3 :Fem "nts"],
-            [:Plural :Person1 :Common "ἰnn"],
-            [:Plural :Person2 :Common "ntṯn ~ nttn"],
-            [:Plural :Person3 :Common "ntsn"]]
-    }
-    {:label "egyptian_M-PSuff"
-    :note "Alan Gardiner,Egyptian Grammar,3rd Edition (Oxford:Griffith Institute,2001),§34. James E. Hoch,Middle Egyptian Grammar (Mississauga:Benben Publications,1997),§23. Note existence of the dual set of suffix pronouns."
-    :pdgmType :PRO
-    :common {:pos :Pronoun,
-             :proClass :Suffix}
-    :terms [[:number :person :gender :token],
-            [:Singular :Person1 :Common "⊤"],
-            [:Singular :Person2 :Masc "-k"],
-            [:Singular :Person2 :Fem "-ṯ ~ -t"],
-            [:Singular :Person3 :Masc "-f"],
-            [:Singular :Person3 :Fem "-s"],
-            [:Plural :Person1 :Common "-n"],
-            [:Plural :Person2 :Common "-ṯn ~ -tn"],
-            [:Plural :Person3 :Common "-sn"],
-            [:Dual :Person1 :Common "-ny"],
-            [:Dual :Person2 :Common "-ṯny"],
-            [:Dual :Person3 :Masc "-fy"],
-            [:Dual :Person3 :Fem "-sy"],
-            [:Dual :Person3 :Common "-sny"]]
-    }
-]
-}
- 
- 
+ :termclusters [
+                {:label "egyptian_M-VAffCCCsdm-f"
+                 :common {:vmorphclass :Finite
+                          :lexeme :sdm,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :rootClass :CCC,
+                          :stem :Base
+                          :tam :Imperfective}
+                 :terms [[:number :person :gender :token],
+                         [:Singular :Person1 :Common "sḏm-j"],
+                         [:Singular :Person2 :Masc "sḏm-k"],
+                         [:Singular :Person2 :Fem "sḏm-ṯ"],
+                         [:Singular :Person3 :Masc "sḏm-f"],
+                         [:Singular :Person3 :Fem "sḏm-s"],
+                         [:Plural :Person1 :Common "sḏm-n"],
+                         [:Plural :Person2 :Common "sḏmn-ṯn"],
+                         [:Plural :Person3 :Common "sḏm-sn"]]
+                 }
+                {:label "egyptian_M-VAffCCCsdm-n-f"
+                 :common {:vmorphclass :Finite
+                          :lexeme :sdm,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :rootClass :CCC,
+                          :stem :N
+                          :tam :Preterite}
+                 :terms [[:number :person :gender :token],
+                         [:Singular :Person1 :Common "sḏm.n-j"],
+                         [:Singular :Person2 :Masc "sḏm.n-k"],
+                         [:Singular :Person2 :Fem "sḏm.n-ṯ"],
+                         [:Singular :Person3 :Masc "sḏm.n-f"],
+                         [:Singular :Person3 :Fem "sḏm.n-s"],
+                         [:Plural :Person1 :Common "sḏm.n-n"],
+                         [:Plural :Person2 :Common "sḏm.n-ṯn"],
+                         [:Plural :Person3 :Common "sḏm.n-sn"]]
+                 }
+                {:label "egyptian_M-VAffCCCStative"
+                 :common {:vmorphclass :Finite
+                          :lexeme :sdm,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :rootClass :CCC,
+                          :stem :Base
+                          :tam :Stative}
+                 :terms [[:number :person :gender :token],
+                         [:Singular :Person1 :Common "sḏm-kw"],
+                         [:Singular :Person2 :Common "sḏm-tj"],
+                         [:Singular :Person3 :Masc "sḏm-w"],
+                         [:Singular :Person3 :Fem "sḏm-tj"],
+                         [:Plural :Person1 :Common "sḏm-wjn"],
+                         [:Plural :Person2 :Common "sḏm-tjwnj"],
+                         [:Plural :Person3 :Common "sḏm-wj"]]
+                 }
+                {:label "egyptian_M-PDep"
+                 :note "Alan Gardiner,Egyptian Grammar,3rd Edition (Oxford:Griffith Institute,2001),§43. James E. Hoch,Middle Egyptian Grammar (Mississauga:Benben Publications,1997),§39."
+                 :common {:pos :Pronoun,
+                          :proClass :Dependent}
+                 :terms [[:number :person :gender :token],
+                         [:Singular :Person1 :Common "wἰ"],
+                         [:Singular :Person2 :Masc "ṯw ~ tw"],
+                         [:Singular :Person2 :Fem "ṯn ~ tn"],
+                         [:Singular :Person3 :Masc "sw"],
+                         [:Singular :Person3 :Fem "sy ~ s ~ st"],
+                         [:Plural :Person1 :Common "n"],
+                         [:Plural :Person2 :Common "ṯn ~ tn"],
+                         [:Plural :Person3 :Common "sn"]]
+                 }
+                {:label "egyptian_M-PInd"
+                 :note "Alan Gardiner,Egyptian Grammar,3rd Edition (Oxford:Griffith Institute,2001),§64. James E. Hoch,Middle Egyptian Grammar (Mississauga:Benben Publications,1997),§56."
+                 :common {:pos :Pronoun,
+                          :proClass :Independent}
+                 :terms [[:number :person :gender :token],
+                         [:Singular :Person1 :Common "ἰnk"],
+                         [:Singular :Person2 :Masc "ntk"],
+                         [:Singular :Person2 :Fem "ntṯ"],
+                         [:Singular :Person3 :Masc "ntf"],
+                         [:Singular :Person3 :Fem "nts"],
+                         [:Plural :Person1 :Common "ἰnn"],
+                         [:Plural :Person2 :Common "ntṯn ~ nttn"],
+                         [:Plural :Person3 :Common "ntsn"]]
+                 }
+                {:label "egyptian_M-PSuff"
+                 :note "Alan Gardiner,Egyptian Grammar,3rd Edition (Oxford:Griffith Institute,2001),§34. James E. Hoch,Middle Egyptian Grammar (Mississauga:Benben Publications,1997),§23. Note existence of the dual set of suffix pronouns."
+                 :common {:pos :Pronoun,
+                          :proClass :Suffix}
+                 :terms [[:number :person :gender :token],
+                         [:Singular :Person1 :Common "⊤"],
+                         [:Singular :Person2 :Masc "-k"],
+                         [:Singular :Person2 :Fem "-ṯ ~ -t"],
+                         [:Singular :Person3 :Masc "-f"],
+                         [:Singular :Person3 :Fem "-s"],
+                         [:Plural :Person1 :Common "-n"],
+                         [:Plural :Person2 :Common "-ṯn ~ -tn"],
+                         [:Plural :Person3 :Common "-sn"],
+                         [:Dual :Person1 :Common "-ny"],
+                         [:Dual :Person2 :Common "-ṯny"],
+                         [:Dual :Person3 :Masc "-fy"],
+                         [:Dual :Person3 :Fem "-sy"],
+                         [:Dual :Person3 :Common "-sny"]]
+                 }
+                ]
+ }
+
+
