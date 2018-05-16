@@ -14,7 +14,7 @@
            :rootClass [:CCC],
            :stem [:Base :N],
            :tam [:Imperfective :Preterite :Stative]
-           :vmorphclass [:Finite ]
+           :vmorphClass [:Finite ]
            }
  :pclass {:pngClass [:person :number :gender],
           :synsemClass [:pos :proClass],
@@ -25,7 +25,7 @@
 
  :termclusters [
                 {:label "egyptian_M-VAffCCCsdm-f"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :lexeme :sdm,
                           :polarity :Affirmative,
                           :pos :Verb,
@@ -43,7 +43,7 @@
                          [:Plural :Person3 :Common "sḏm-sn"]]
                  }
                 {:label "egyptian_M-VAffCCCsdm-n-f"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :lexeme :sdm,
                           :polarity :Affirmative,
                           :pos :Verb,
@@ -61,7 +61,7 @@
                          [:Plural :Person3 :Common "sḏm.n-sn"]]
                  }
                 {:label "egyptian_M-VAffCCCStative"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :lexeme :sdm,
                           :polarity :Affirmative,
                           :pos :Verb,
