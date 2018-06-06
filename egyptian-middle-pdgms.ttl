@@ -1,0 +1,960 @@
+#TTL FROM INPUT FILE:
+#../aama-data/data//egyptian-middle/egyptian-middle-pdgms.edn
+
+@prefix rdf:	 <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:	 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc:    <http://purl.org/dc/elements>.
+@prefix dcterms:    <http://purl.org/dc/terms>.
+@prefix aama:	 <http://id.oi.uchicago.edu/aama/2013/> .
+@prefix aamas:	 <http://id.oi.uchicago.edu/aama/2013/schema/> .
+@prefix egm:   <http://id.oi.uchicago.edu/aama/2013/egyptian-middle/> .
+
+#LANG INFO:
+
+aama:Egyptian-middle a aamas:Language .
+aama:Egyptian-middle rdfs:label "Egyptian-middle" .
+aama:Egyptian-middle aamas:subfamily "Egyptian" .
+aama:Egyptian-middle aamas:lpref "egm" .
+aama:Egyptian-middle aamas:dataSource "Gardiner1957 " .
+aama:Egyptian-middle aamas:dataSourceNotes "" .
+aama:Egyptian-middle aamas:geodemoURL "http://www.britannica.com/topic/Egyptian-language https://en.wikipedia.org/wiki/Languages_of_Egypt" .
+aama:Egyptian-middle aamas:geodemoTXT "Middle Egyptian is the 'Classic' form of the written language%% possibly representing the spoken form of the language in late third and early second millennium BCE." .
+
+
+#SCHEMATA: person
+egm:person aamas:lang aama:Egyptian-middle .
+egm:Person aamas:lang aama:Egyptian-middle .
+egm:person rdfs:domain aamas:Term .
+egm:Person rdfs:label "person exponents" .
+egm:person rdfs:label "person" .
+egm:person rdfs:range egm:Person .
+egm:Person rdfs:subClassOf egm:MuExponent .
+egm:person rdfs:subPropertyOf egm:muProperty .
+egm:Person1 aamas:lang aama:Egyptian-middle .
+egm:Person1 rdf:type egm:Person .
+egm:Person1 rdfs:label "Person1" .
+egm:Person2 aamas:lang aama:Egyptian-middle .
+egm:Person2 rdf:type egm:Person .
+egm:Person2 rdfs:label "Person2" .
+egm:Person3 aamas:lang aama:Egyptian-middle .
+egm:Person3 rdf:type egm:Person .
+egm:Person3 rdfs:label "Person3" .
+
+#SCHEMATA: number
+egm:number aamas:lang aama:Egyptian-middle .
+egm:Number aamas:lang aama:Egyptian-middle .
+egm:number rdfs:domain aamas:Term .
+egm:Number rdfs:label "number exponents" .
+egm:number rdfs:label "number" .
+egm:number rdfs:range egm:Number .
+egm:Number rdfs:subClassOf egm:MuExponent .
+egm:number rdfs:subPropertyOf egm:muProperty .
+egm:Dual aamas:lang aama:Egyptian-middle .
+egm:Dual rdf:type egm:Number .
+egm:Dual rdfs:label "Dual" .
+egm:Plural aamas:lang aama:Egyptian-middle .
+egm:Plural rdf:type egm:Number .
+egm:Plural rdfs:label "Plural" .
+egm:Singular aamas:lang aama:Egyptian-middle .
+egm:Singular rdf:type egm:Number .
+egm:Singular rdfs:label "Singular" .
+
+#SCHEMATA: vmorphClass
+egm:vmorphClass aamas:lang aama:Egyptian-middle .
+egm:Vmorphclass aamas:lang aama:Egyptian-middle .
+egm:vmorphClass rdfs:domain aamas:Term .
+egm:Vmorphclass rdfs:label "vmorphClass exponents" .
+egm:vmorphClass rdfs:label "vmorphClass" .
+egm:vmorphClass rdfs:range egm:Vmorphclass .
+egm:Vmorphclass rdfs:subClassOf egm:MuExponent .
+egm:vmorphClass rdfs:subPropertyOf egm:muProperty .
+egm:Finite aamas:lang aama:Egyptian-middle .
+egm:Finite rdf:type egm:Vmorphclass .
+egm:Finite rdfs:label "Finite" .
+
+#SCHEMATA: pos
+egm:pos aamas:lang aama:Egyptian-middle .
+egm:Pos aamas:lang aama:Egyptian-middle .
+egm:pos rdfs:domain aamas:Term .
+egm:Pos rdfs:label "pos exponents" .
+egm:pos rdfs:label "pos" .
+egm:pos rdfs:range egm:Pos .
+egm:Pos rdfs:subClassOf egm:MuExponent .
+egm:pos rdfs:subPropertyOf egm:muProperty .
+egm:Pronoun aamas:lang aama:Egyptian-middle .
+egm:Pronoun rdf:type egm:Pos .
+egm:Pronoun rdfs:label "Pronoun" .
+egm:Verb aamas:lang aama:Egyptian-middle .
+egm:Verb rdf:type egm:Pos .
+egm:Verb rdfs:label "Verb" .
+
+#SCHEMATA: proClass
+egm:proClass aamas:lang aama:Egyptian-middle .
+egm:Proclass aamas:lang aama:Egyptian-middle .
+egm:proClass rdfs:domain aamas:Term .
+egm:Proclass rdfs:label "proClass exponents" .
+egm:proClass rdfs:label "proClass" .
+egm:proClass rdfs:range egm:Proclass .
+egm:Proclass rdfs:subClassOf egm:MuExponent .
+egm:proClass rdfs:subPropertyOf egm:muProperty .
+egm:Dependent aamas:lang aama:Egyptian-middle .
+egm:Dependent rdf:type egm:Proclass .
+egm:Dependent rdfs:label "Dependent" .
+egm:Independent aamas:lang aama:Egyptian-middle .
+egm:Independent rdf:type egm:Proclass .
+egm:Independent rdfs:label "Independent" .
+egm:Suffix aamas:lang aama:Egyptian-middle .
+egm:Suffix rdf:type egm:Proclass .
+egm:Suffix rdfs:label "Suffix" .
+
+#SCHEMATA: lexeme
+egm:lexeme aamas:lang aama:Egyptian-middle .
+egm:Lexeme aamas:lang aama:Egyptian-middle .
+egm:lexeme rdfs:domain aamas:Term .
+egm:Lexeme rdfs:label "lexeme exponents" .
+egm:lexeme rdfs:label "lexeme" .
+egm:lexeme rdfs:range egm:Lexeme .
+egm:Lexeme rdfs:subClassOf egm:MuExponent .
+egm:lexeme rdfs:subPropertyOf egm:muProperty .
+egm:sdm aamas:lang aama:Egyptian-middle .
+egm:sdm rdf:type egm:Lexeme .
+egm:sdm rdfs:label "sdm" .
+
+#SCHEMATA: stem
+egm:stem aamas:lang aama:Egyptian-middle .
+egm:Stem aamas:lang aama:Egyptian-middle .
+egm:stem rdfs:domain aamas:Term .
+egm:Stem rdfs:label "stem exponents" .
+egm:stem rdfs:label "stem" .
+egm:stem rdfs:range egm:Stem .
+egm:Stem rdfs:subClassOf egm:MuExponent .
+egm:stem rdfs:subPropertyOf egm:muProperty .
+egm:Base aamas:lang aama:Egyptian-middle .
+egm:Base rdf:type egm:Stem .
+egm:Base rdfs:label "Base" .
+egm:N aamas:lang aama:Egyptian-middle .
+egm:N rdf:type egm:Stem .
+egm:N rdfs:label "N" .
+
+#SCHEMATA: polarity
+egm:polarity aamas:lang aama:Egyptian-middle .
+egm:Polarity aamas:lang aama:Egyptian-middle .
+egm:polarity rdfs:domain aamas:Term .
+egm:Polarity rdfs:label "polarity exponents" .
+egm:polarity rdfs:label "polarity" .
+egm:polarity rdfs:range egm:Polarity .
+egm:Polarity rdfs:subClassOf egm:MuExponent .
+egm:polarity rdfs:subPropertyOf egm:muProperty .
+egm:Affirmative aamas:lang aama:Egyptian-middle .
+egm:Affirmative rdf:type egm:Polarity .
+egm:Affirmative rdfs:label "Affirmative" .
+
+#SCHEMATA: tam
+egm:tam aamas:lang aama:Egyptian-middle .
+egm:Tam aamas:lang aama:Egyptian-middle .
+egm:tam rdfs:domain aamas:Term .
+egm:Tam rdfs:label "tam exponents" .
+egm:tam rdfs:label "tam" .
+egm:tam rdfs:range egm:Tam .
+egm:Tam rdfs:subClassOf egm:MuExponent .
+egm:tam rdfs:subPropertyOf egm:muProperty .
+egm:Imperfective aamas:lang aama:Egyptian-middle .
+egm:Imperfective rdf:type egm:Tam .
+egm:Imperfective rdfs:label "Imperfective" .
+egm:Preterite aamas:lang aama:Egyptian-middle .
+egm:Preterite rdf:type egm:Tam .
+egm:Preterite rdfs:label "Preterite" .
+egm:Stative aamas:lang aama:Egyptian-middle .
+egm:Stative rdf:type egm:Tam .
+egm:Stative rdfs:label "Stative" .
+
+#SCHEMATA: gender
+egm:gender aamas:lang aama:Egyptian-middle .
+egm:Gender aamas:lang aama:Egyptian-middle .
+egm:gender rdfs:domain aamas:Term .
+egm:Gender rdfs:label "gender exponents" .
+egm:gender rdfs:label "gender" .
+egm:gender rdfs:range egm:Gender .
+egm:Gender rdfs:subClassOf egm:MuExponent .
+egm:gender rdfs:subPropertyOf egm:muProperty .
+egm:Common aamas:lang aama:Egyptian-middle .
+egm:Common rdf:type egm:Gender .
+egm:Common rdfs:label "Common" .
+egm:Fem aamas:lang aama:Egyptian-middle .
+egm:Fem rdf:type egm:Gender .
+egm:Fem rdfs:label "Fem" .
+egm:Masc aamas:lang aama:Egyptian-middle .
+egm:Masc rdf:type egm:Gender .
+egm:Masc rdfs:label "Masc" .
+
+#SCHEMATA: rootClass
+egm:rootClass aamas:lang aama:Egyptian-middle .
+egm:Rootclass aamas:lang aama:Egyptian-middle .
+egm:rootClass rdfs:domain aamas:Term .
+egm:Rootclass rdfs:label "rootClass exponents" .
+egm:rootClass rdfs:label "rootClass" .
+egm:rootClass rdfs:range egm:Rootclass .
+egm:Rootclass rdfs:subClassOf egm:MuExponent .
+egm:rootClass rdfs:subPropertyOf egm:muProperty .
+egm:CCC aamas:lang aama:Egyptian-middle .
+egm:CCC rdf:type egm:Rootclass .
+egm:CCC rdfs:label "CCC" .
+
+#PCLASSES:
+
+egm:person aamas:pclass aamas:pngClass .
+aamas:pngClass rdfs:label "pngClass" .
+egm:number aamas:pclass aamas:pngClass .
+aamas:pngClass rdfs:label "pngClass" .
+egm:gender aamas:pclass aamas:pngClass .
+aamas:pngClass rdfs:label "pngClass" .
+egm:pos aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+egm:proClass aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+egm:status aamas:pclass aamas:inflClass .
+aamas:inflClass rdfs:label "inflClass" .
+
+#LEXEMES:
+aama:Egyptian-middle-sdm a aamas:Lexeme ;
+	aamas:lang aama:Egyptian-middle ;
+	rdfs:label "sdm" ;
+	egm:rootClass egm:CCC ;
+	aamas:lemma "sḏm" ;
+	aamas:gloss "hear" ;
+	.
+
+#TERMCLUSTER:  egyptian_M-VAffCCCsdm-f
+
+egm:egyptian_M-VAffCCCsdm-f a aamas:Termcluster ;
+	rdfs:label "egyptian_M-VAffCCCsdm-f" ;
+	aamas:lang aama:Egyptian-middle ;
+	rdfs:comment "" 
+	.
+
+aama:ID289f8052-d249-4bb4-b2fd-4873e73fea92 a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-VAffCCCsdm-f ;
+	egm:vmorphClass egm:Finite ;
+	aamas:lexeme aama:Egyptian-middle-sdm ;
+	egm:polarity egm:Affirmative ;
+	egm:pos egm:Verb ;
+	egm:rootClass egm:CCC ;
+	egm:stem egm:Base ;
+	egm:tam egm:Imperfective ;
+	egm:token "sḏm-j" ;
+	egm:gender egm:Common ;
+	egm:person egm:Person1 ;
+	egm:number egm:Singular ;
+	.
+
+aama:IDfff6f37a-436a-4932-ad8e-eccf6a4b0a1e a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-VAffCCCsdm-f ;
+	egm:vmorphClass egm:Finite ;
+	aamas:lexeme aama:Egyptian-middle-sdm ;
+	egm:polarity egm:Affirmative ;
+	egm:pos egm:Verb ;
+	egm:rootClass egm:CCC ;
+	egm:stem egm:Base ;
+	egm:tam egm:Imperfective ;
+	egm:token "sḏm-k" ;
+	egm:gender egm:Masc ;
+	egm:person egm:Person2 ;
+	egm:number egm:Singular ;
+	.
+
+aama:IDcb86beaa-63cb-4872-a3bb-aeb3b91499d0 a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-VAffCCCsdm-f ;
+	egm:vmorphClass egm:Finite ;
+	aamas:lexeme aama:Egyptian-middle-sdm ;
+	egm:polarity egm:Affirmative ;
+	egm:pos egm:Verb ;
+	egm:rootClass egm:CCC ;
+	egm:stem egm:Base ;
+	egm:tam egm:Imperfective ;
+	egm:token "sḏm-ṯ" ;
+	egm:gender egm:Fem ;
+	egm:person egm:Person2 ;
+	egm:number egm:Singular ;
+	.
+
+aama:IDd4e48ae2-9523-4347-a238-ddffdd1fb77c a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-VAffCCCsdm-f ;
+	egm:vmorphClass egm:Finite ;
+	aamas:lexeme aama:Egyptian-middle-sdm ;
+	egm:polarity egm:Affirmative ;
+	egm:pos egm:Verb ;
+	egm:rootClass egm:CCC ;
+	egm:stem egm:Base ;
+	egm:tam egm:Imperfective ;
+	egm:token "sḏm-f" ;
+	egm:gender egm:Masc ;
+	egm:person egm:Person3 ;
+	egm:number egm:Singular ;
+	.
+
+aama:ID639810a7-43bc-4db5-abce-d3258f8f3b7b a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-VAffCCCsdm-f ;
+	egm:vmorphClass egm:Finite ;
+	aamas:lexeme aama:Egyptian-middle-sdm ;
+	egm:polarity egm:Affirmative ;
+	egm:pos egm:Verb ;
+	egm:rootClass egm:CCC ;
+	egm:stem egm:Base ;
+	egm:tam egm:Imperfective ;
+	egm:token "sḏm-s" ;
+	egm:gender egm:Fem ;
+	egm:person egm:Person3 ;
+	egm:number egm:Singular ;
+	.
+
+aama:IDea9517f2-ae92-40b0-8b66-d1340dcb1056 a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-VAffCCCsdm-f ;
+	egm:vmorphClass egm:Finite ;
+	aamas:lexeme aama:Egyptian-middle-sdm ;
+	egm:polarity egm:Affirmative ;
+	egm:pos egm:Verb ;
+	egm:rootClass egm:CCC ;
+	egm:stem egm:Base ;
+	egm:tam egm:Imperfective ;
+	egm:token "sḏm-n" ;
+	egm:gender egm:Common ;
+	egm:person egm:Person1 ;
+	egm:number egm:Plural ;
+	.
+
+aama:IDe58e3333-0292-4f47-9f2c-95bb38455fc1 a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-VAffCCCsdm-f ;
+	egm:vmorphClass egm:Finite ;
+	aamas:lexeme aama:Egyptian-middle-sdm ;
+	egm:polarity egm:Affirmative ;
+	egm:pos egm:Verb ;
+	egm:rootClass egm:CCC ;
+	egm:stem egm:Base ;
+	egm:tam egm:Imperfective ;
+	egm:token "sḏmn-ṯn" ;
+	egm:gender egm:Common ;
+	egm:person egm:Person2 ;
+	egm:number egm:Plural ;
+	.
+
+aama:IDbe21ff78-22d2-4901-8b73-031094e58976 a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-VAffCCCsdm-f ;
+	egm:vmorphClass egm:Finite ;
+	aamas:lexeme aama:Egyptian-middle-sdm ;
+	egm:polarity egm:Affirmative ;
+	egm:pos egm:Verb ;
+	egm:rootClass egm:CCC ;
+	egm:stem egm:Base ;
+	egm:tam egm:Imperfective ;
+	egm:token "sḏm-sn" ;
+	egm:gender egm:Common ;
+	egm:person egm:Person3 ;
+	egm:number egm:Plural ;
+	.
+
+#TERMCLUSTER:  egyptian_M-VAffCCCsdm-n-f
+
+egm:egyptian_M-VAffCCCsdm-n-f a aamas:Termcluster ;
+	rdfs:label "egyptian_M-VAffCCCsdm-n-f" ;
+	aamas:lang aama:Egyptian-middle ;
+	rdfs:comment "" 
+	.
+
+aama:IDdd6323b4-af97-46f2-8698-2d017c08dcde a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-VAffCCCsdm-n-f ;
+	egm:vmorphClass egm:Finite ;
+	aamas:lexeme aama:Egyptian-middle-sdm ;
+	egm:polarity egm:Affirmative ;
+	egm:pos egm:Verb ;
+	egm:rootClass egm:CCC ;
+	egm:stem egm:N ;
+	egm:tam egm:Preterite ;
+	egm:token "sḏm.n-j" ;
+	egm:gender egm:Common ;
+	egm:person egm:Person1 ;
+	egm:number egm:Singular ;
+	.
+
+aama:IDc7884f56-023e-4b58-a15f-a3fed861d9a1 a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-VAffCCCsdm-n-f ;
+	egm:vmorphClass egm:Finite ;
+	aamas:lexeme aama:Egyptian-middle-sdm ;
+	egm:polarity egm:Affirmative ;
+	egm:pos egm:Verb ;
+	egm:rootClass egm:CCC ;
+	egm:stem egm:N ;
+	egm:tam egm:Preterite ;
+	egm:token "sḏm.n-k" ;
+	egm:gender egm:Masc ;
+	egm:person egm:Person2 ;
+	egm:number egm:Singular ;
+	.
+
+aama:ID3fc632ea-292d-45e2-b53a-6d03c2e7269b a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-VAffCCCsdm-n-f ;
+	egm:vmorphClass egm:Finite ;
+	aamas:lexeme aama:Egyptian-middle-sdm ;
+	egm:polarity egm:Affirmative ;
+	egm:pos egm:Verb ;
+	egm:rootClass egm:CCC ;
+	egm:stem egm:N ;
+	egm:tam egm:Preterite ;
+	egm:token "sḏm.n-ṯ" ;
+	egm:gender egm:Fem ;
+	egm:person egm:Person2 ;
+	egm:number egm:Singular ;
+	.
+
+aama:ID1ddd9027-3971-4b2d-ad75-9f9be74c13d9 a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-VAffCCCsdm-n-f ;
+	egm:vmorphClass egm:Finite ;
+	aamas:lexeme aama:Egyptian-middle-sdm ;
+	egm:polarity egm:Affirmative ;
+	egm:pos egm:Verb ;
+	egm:rootClass egm:CCC ;
+	egm:stem egm:N ;
+	egm:tam egm:Preterite ;
+	egm:token "sḏm.n-f" ;
+	egm:gender egm:Masc ;
+	egm:person egm:Person3 ;
+	egm:number egm:Singular ;
+	.
+
+aama:IDc855299f-a31f-436e-8f19-7a5330a30d3d a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-VAffCCCsdm-n-f ;
+	egm:vmorphClass egm:Finite ;
+	aamas:lexeme aama:Egyptian-middle-sdm ;
+	egm:polarity egm:Affirmative ;
+	egm:pos egm:Verb ;
+	egm:rootClass egm:CCC ;
+	egm:stem egm:N ;
+	egm:tam egm:Preterite ;
+	egm:token "sḏm.n-s" ;
+	egm:gender egm:Fem ;
+	egm:person egm:Person3 ;
+	egm:number egm:Singular ;
+	.
+
+aama:IDd4682385-1d4a-4d67-b99f-d71d1ab7a533 a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-VAffCCCsdm-n-f ;
+	egm:vmorphClass egm:Finite ;
+	aamas:lexeme aama:Egyptian-middle-sdm ;
+	egm:polarity egm:Affirmative ;
+	egm:pos egm:Verb ;
+	egm:rootClass egm:CCC ;
+	egm:stem egm:N ;
+	egm:tam egm:Preterite ;
+	egm:token "sḏm.n-n" ;
+	egm:gender egm:Common ;
+	egm:person egm:Person1 ;
+	egm:number egm:Plural ;
+	.
+
+aama:ID71070c16-e0ed-4454-859c-118973dd1f23 a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-VAffCCCsdm-n-f ;
+	egm:vmorphClass egm:Finite ;
+	aamas:lexeme aama:Egyptian-middle-sdm ;
+	egm:polarity egm:Affirmative ;
+	egm:pos egm:Verb ;
+	egm:rootClass egm:CCC ;
+	egm:stem egm:N ;
+	egm:tam egm:Preterite ;
+	egm:token "sḏm.n-ṯn" ;
+	egm:gender egm:Common ;
+	egm:person egm:Person2 ;
+	egm:number egm:Plural ;
+	.
+
+aama:ID5b2b02b3-5109-479f-b997-568cdc002bb4 a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-VAffCCCsdm-n-f ;
+	egm:vmorphClass egm:Finite ;
+	aamas:lexeme aama:Egyptian-middle-sdm ;
+	egm:polarity egm:Affirmative ;
+	egm:pos egm:Verb ;
+	egm:rootClass egm:CCC ;
+	egm:stem egm:N ;
+	egm:tam egm:Preterite ;
+	egm:token "sḏm.n-sn" ;
+	egm:gender egm:Common ;
+	egm:person egm:Person3 ;
+	egm:number egm:Plural ;
+	.
+
+#TERMCLUSTER:  egyptian_M-VAffCCCStative
+
+egm:egyptian_M-VAffCCCStative a aamas:Termcluster ;
+	rdfs:label "egyptian_M-VAffCCCStative" ;
+	aamas:lang aama:Egyptian-middle ;
+	rdfs:comment "" 
+	.
+
+aama:IDccd58a83-9e7c-4788-ab70-54362fb9f0b8 a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-VAffCCCStative ;
+	egm:vmorphClass egm:Finite ;
+	aamas:lexeme aama:Egyptian-middle-sdm ;
+	egm:polarity egm:Affirmative ;
+	egm:pos egm:Verb ;
+	egm:rootClass egm:CCC ;
+	egm:stem egm:Base ;
+	egm:tam egm:Stative ;
+	egm:token "sḏm-kw" ;
+	egm:gender egm:Common ;
+	egm:person egm:Person1 ;
+	egm:number egm:Singular ;
+	.
+
+aama:ID35920198-ac59-4a00-b8b0-13c4237b2986 a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-VAffCCCStative ;
+	egm:vmorphClass egm:Finite ;
+	aamas:lexeme aama:Egyptian-middle-sdm ;
+	egm:polarity egm:Affirmative ;
+	egm:pos egm:Verb ;
+	egm:rootClass egm:CCC ;
+	egm:stem egm:Base ;
+	egm:tam egm:Stative ;
+	egm:token "sḏm-tj" ;
+	egm:gender egm:Common ;
+	egm:person egm:Person2 ;
+	egm:number egm:Singular ;
+	.
+
+aama:IDee72d11f-39cc-4d9f-a23b-f36cee03743b a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-VAffCCCStative ;
+	egm:vmorphClass egm:Finite ;
+	aamas:lexeme aama:Egyptian-middle-sdm ;
+	egm:polarity egm:Affirmative ;
+	egm:pos egm:Verb ;
+	egm:rootClass egm:CCC ;
+	egm:stem egm:Base ;
+	egm:tam egm:Stative ;
+	egm:token "sḏm-w" ;
+	egm:gender egm:Masc ;
+	egm:person egm:Person3 ;
+	egm:number egm:Singular ;
+	.
+
+aama:ID2c9a5589-de30-498b-b425-33590922c9f2 a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-VAffCCCStative ;
+	egm:vmorphClass egm:Finite ;
+	aamas:lexeme aama:Egyptian-middle-sdm ;
+	egm:polarity egm:Affirmative ;
+	egm:pos egm:Verb ;
+	egm:rootClass egm:CCC ;
+	egm:stem egm:Base ;
+	egm:tam egm:Stative ;
+	egm:token "sḏm-tj" ;
+	egm:gender egm:Fem ;
+	egm:person egm:Person3 ;
+	egm:number egm:Singular ;
+	.
+
+aama:IDe747fe8d-3445-4ffd-b4b4-c58e1f6cf2a5 a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-VAffCCCStative ;
+	egm:vmorphClass egm:Finite ;
+	aamas:lexeme aama:Egyptian-middle-sdm ;
+	egm:polarity egm:Affirmative ;
+	egm:pos egm:Verb ;
+	egm:rootClass egm:CCC ;
+	egm:stem egm:Base ;
+	egm:tam egm:Stative ;
+	egm:token "sḏm-wjn" ;
+	egm:gender egm:Common ;
+	egm:person egm:Person1 ;
+	egm:number egm:Plural ;
+	.
+
+aama:IDeeac0c1a-1691-4189-810b-bdf07bab7cfd a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-VAffCCCStative ;
+	egm:vmorphClass egm:Finite ;
+	aamas:lexeme aama:Egyptian-middle-sdm ;
+	egm:polarity egm:Affirmative ;
+	egm:pos egm:Verb ;
+	egm:rootClass egm:CCC ;
+	egm:stem egm:Base ;
+	egm:tam egm:Stative ;
+	egm:token "sḏm-tjwnj" ;
+	egm:gender egm:Common ;
+	egm:person egm:Person2 ;
+	egm:number egm:Plural ;
+	.
+
+aama:IDc405442b-3437-43bb-9676-fb248fbb49d4 a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-VAffCCCStative ;
+	egm:vmorphClass egm:Finite ;
+	aamas:lexeme aama:Egyptian-middle-sdm ;
+	egm:polarity egm:Affirmative ;
+	egm:pos egm:Verb ;
+	egm:rootClass egm:CCC ;
+	egm:stem egm:Base ;
+	egm:tam egm:Stative ;
+	egm:token "sḏm-wj" ;
+	egm:gender egm:Common ;
+	egm:person egm:Person3 ;
+	egm:number egm:Plural ;
+	.
+
+#TERMCLUSTER:  egyptian_M-PDep
+
+egm:egyptian_M-PDep a aamas:Termcluster ;
+	rdfs:label "egyptian_M-PDep" ;
+	aamas:lang aama:Egyptian-middle ;
+	rdfs:comment "Alan Gardiner%%Egyptian Grammar%%3rd Edition (Oxford:Griffith Institute%%2001)%%§43. James E. Hoch%%Middle Egyptian Grammar (Mississauga:Benben Publications%%1997)%%§39." 
+	.
+
+aama:ID48f744d6-0b8b-4f91-8d6c-de69b22fff7e a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-PDep ;
+	egm:pos egm:Pronoun ;
+	egm:proClass egm:Dependent ;
+	egm:token "wἰ" ;
+	egm:gender egm:Common ;
+	egm:person egm:Person1 ;
+	egm:number egm:Singular ;
+	.
+
+aama:IDa0e4a318-9529-4fdc-b0c8-2d508389d2f0 a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-PDep ;
+	egm:pos egm:Pronoun ;
+	egm:proClass egm:Dependent ;
+	egm:token "ṯw ~ tw" ;
+	egm:gender egm:Masc ;
+	egm:person egm:Person2 ;
+	egm:number egm:Singular ;
+	.
+
+aama:ID460acce1-84f2-4f42-86f1-2c3e952a09e1 a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-PDep ;
+	egm:pos egm:Pronoun ;
+	egm:proClass egm:Dependent ;
+	egm:token "ṯn ~ tn" ;
+	egm:gender egm:Fem ;
+	egm:person egm:Person2 ;
+	egm:number egm:Singular ;
+	.
+
+aama:IDcba7fb01-6609-4190-8751-c7bd5b33a82a a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-PDep ;
+	egm:pos egm:Pronoun ;
+	egm:proClass egm:Dependent ;
+	egm:token "sw" ;
+	egm:gender egm:Masc ;
+	egm:person egm:Person3 ;
+	egm:number egm:Singular ;
+	.
+
+aama:IDa4c3273c-dddd-4e2b-b8f3-f14d77313cc8 a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-PDep ;
+	egm:pos egm:Pronoun ;
+	egm:proClass egm:Dependent ;
+	egm:token "sy ~ s ~ st" ;
+	egm:gender egm:Fem ;
+	egm:person egm:Person3 ;
+	egm:number egm:Singular ;
+	.
+
+aama:ID4ffe1490-1719-45cb-9358-7d3de6351c6f a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-PDep ;
+	egm:pos egm:Pronoun ;
+	egm:proClass egm:Dependent ;
+	egm:token "n" ;
+	egm:gender egm:Common ;
+	egm:person egm:Person1 ;
+	egm:number egm:Plural ;
+	.
+
+aama:ID3dd05d17-35a1-40bc-a843-24453c0dc35a a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-PDep ;
+	egm:pos egm:Pronoun ;
+	egm:proClass egm:Dependent ;
+	egm:token "ṯn ~ tn" ;
+	egm:gender egm:Common ;
+	egm:person egm:Person2 ;
+	egm:number egm:Plural ;
+	.
+
+aama:ID353a7585-7c6a-4101-bbbf-eaa1540257ec a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-PDep ;
+	egm:pos egm:Pronoun ;
+	egm:proClass egm:Dependent ;
+	egm:token "sn" ;
+	egm:gender egm:Common ;
+	egm:person egm:Person3 ;
+	egm:number egm:Plural ;
+	.
+
+#TERMCLUSTER:  egyptian_M-PInd
+
+egm:egyptian_M-PInd a aamas:Termcluster ;
+	rdfs:label "egyptian_M-PInd" ;
+	aamas:lang aama:Egyptian-middle ;
+	rdfs:comment "Alan Gardiner%%Egyptian Grammar%%3rd Edition (Oxford:Griffith Institute%%2001)%%§64. James E. Hoch%%Middle Egyptian Grammar (Mississauga:Benben Publications%%1997)%%§56." 
+	.
+
+aama:ID3524e942-ae30-4c1c-9347-0e161fb3a557 a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-PInd ;
+	egm:pos egm:Pronoun ;
+	egm:proClass egm:Independent ;
+	egm:token "ἰnk" ;
+	egm:gender egm:Common ;
+	egm:person egm:Person1 ;
+	egm:number egm:Singular ;
+	.
+
+aama:IDd445f974-a4fe-4299-af9c-111d620da0df a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-PInd ;
+	egm:pos egm:Pronoun ;
+	egm:proClass egm:Independent ;
+	egm:token "ntk" ;
+	egm:gender egm:Masc ;
+	egm:person egm:Person2 ;
+	egm:number egm:Singular ;
+	.
+
+aama:IDa0e3f15a-bc9a-4036-9274-b5e7cd8458d8 a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-PInd ;
+	egm:pos egm:Pronoun ;
+	egm:proClass egm:Independent ;
+	egm:token "ntṯ" ;
+	egm:gender egm:Fem ;
+	egm:person egm:Person2 ;
+	egm:number egm:Singular ;
+	.
+
+aama:ID36964185-87a6-4e06-b48d-479c60aec6c8 a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-PInd ;
+	egm:pos egm:Pronoun ;
+	egm:proClass egm:Independent ;
+	egm:token "ntf" ;
+	egm:gender egm:Masc ;
+	egm:person egm:Person3 ;
+	egm:number egm:Singular ;
+	.
+
+aama:ID4d26ca4f-16fa-4c7b-833c-97f8fed61397 a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-PInd ;
+	egm:pos egm:Pronoun ;
+	egm:proClass egm:Independent ;
+	egm:token "nts" ;
+	egm:gender egm:Fem ;
+	egm:person egm:Person3 ;
+	egm:number egm:Singular ;
+	.
+
+aama:IDcae8d4bd-e70b-4f1a-a1ff-6bdc333a6b40 a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-PInd ;
+	egm:pos egm:Pronoun ;
+	egm:proClass egm:Independent ;
+	egm:token "ἰnn" ;
+	egm:gender egm:Common ;
+	egm:person egm:Person1 ;
+	egm:number egm:Plural ;
+	.
+
+aama:IDe285405f-a3f1-4161-adfe-15b2a691c59e a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-PInd ;
+	egm:pos egm:Pronoun ;
+	egm:proClass egm:Independent ;
+	egm:token "ntṯn ~ nttn" ;
+	egm:gender egm:Common ;
+	egm:person egm:Person2 ;
+	egm:number egm:Plural ;
+	.
+
+aama:IDb06b6787-4bc9-48af-89a7-ecf011d6e148 a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-PInd ;
+	egm:pos egm:Pronoun ;
+	egm:proClass egm:Independent ;
+	egm:token "ntsn" ;
+	egm:gender egm:Common ;
+	egm:person egm:Person3 ;
+	egm:number egm:Plural ;
+	.
+
+#TERMCLUSTER:  egyptian_M-PSuff
+
+egm:egyptian_M-PSuff a aamas:Termcluster ;
+	rdfs:label "egyptian_M-PSuff" ;
+	aamas:lang aama:Egyptian-middle ;
+	rdfs:comment "Alan Gardiner%%Egyptian Grammar%%3rd Edition (Oxford:Griffith Institute%%2001)%%§34. James E. Hoch%%Middle Egyptian Grammar (Mississauga:Benben Publications%%1997)%%§23. Note existence of the dual set of suffix pronouns." 
+	.
+
+aama:ID3a5e4da4-6704-490a-a25b-6bf85cd4cd1d a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-PSuff ;
+	egm:pos egm:Pronoun ;
+	egm:proClass egm:Suffix ;
+	egm:token "⊤" ;
+	egm:gender egm:Common ;
+	egm:person egm:Person1 ;
+	egm:number egm:Singular ;
+	.
+
+aama:ID70541dd4-38c6-4ba8-9b94-8c10c534dd6f a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-PSuff ;
+	egm:pos egm:Pronoun ;
+	egm:proClass egm:Suffix ;
+	egm:token "-k" ;
+	egm:gender egm:Masc ;
+	egm:person egm:Person2 ;
+	egm:number egm:Singular ;
+	.
+
+aama:ID0c70cb84-8fdb-4b28-9fc4-cb12928996e8 a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-PSuff ;
+	egm:pos egm:Pronoun ;
+	egm:proClass egm:Suffix ;
+	egm:token "-ṯ ~ -t" ;
+	egm:gender egm:Fem ;
+	egm:person egm:Person2 ;
+	egm:number egm:Singular ;
+	.
+
+aama:ID64137f0d-a438-4568-a605-33834cf90601 a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-PSuff ;
+	egm:pos egm:Pronoun ;
+	egm:proClass egm:Suffix ;
+	egm:token "-f" ;
+	egm:gender egm:Masc ;
+	egm:person egm:Person3 ;
+	egm:number egm:Singular ;
+	.
+
+aama:IDa75cae9b-ae4f-4ef4-afb8-e3fb5b7286b0 a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-PSuff ;
+	egm:pos egm:Pronoun ;
+	egm:proClass egm:Suffix ;
+	egm:token "-s" ;
+	egm:gender egm:Fem ;
+	egm:person egm:Person3 ;
+	egm:number egm:Singular ;
+	.
+
+aama:ID23b87d3b-8ccb-41dd-b7e2-a368eebe9e0a a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-PSuff ;
+	egm:pos egm:Pronoun ;
+	egm:proClass egm:Suffix ;
+	egm:token "-n" ;
+	egm:gender egm:Common ;
+	egm:person egm:Person1 ;
+	egm:number egm:Plural ;
+	.
+
+aama:ID0cdfe764-ed92-4bef-a2b2-8ea116b2c5a8 a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-PSuff ;
+	egm:pos egm:Pronoun ;
+	egm:proClass egm:Suffix ;
+	egm:token "-ṯn ~ -tn" ;
+	egm:gender egm:Common ;
+	egm:person egm:Person2 ;
+	egm:number egm:Plural ;
+	.
+
+aama:IDd236d6be-c455-4fe2-93fc-e5916364a98b a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-PSuff ;
+	egm:pos egm:Pronoun ;
+	egm:proClass egm:Suffix ;
+	egm:token "-sn" ;
+	egm:gender egm:Common ;
+	egm:person egm:Person3 ;
+	egm:number egm:Plural ;
+	.
+
+aama:ID3bf54c3c-6e1d-4d0e-9739-da19b32029f7 a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-PSuff ;
+	egm:pos egm:Pronoun ;
+	egm:proClass egm:Suffix ;
+	egm:token "-ny" ;
+	egm:gender egm:Common ;
+	egm:person egm:Person1 ;
+	egm:number egm:Dual ;
+	.
+
+aama:ID67cace48-9b2c-4e4d-9bb6-9bd8fad14fd2 a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-PSuff ;
+	egm:pos egm:Pronoun ;
+	egm:proClass egm:Suffix ;
+	egm:token "-ṯny" ;
+	egm:gender egm:Common ;
+	egm:person egm:Person2 ;
+	egm:number egm:Dual ;
+	.
+
+aama:ID78102a83-52c0-4895-b743-1a7aecfc7c5d a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-PSuff ;
+	egm:pos egm:Pronoun ;
+	egm:proClass egm:Suffix ;
+	egm:token "-fy" ;
+	egm:gender egm:Masc ;
+	egm:person egm:Person3 ;
+	egm:number egm:Dual ;
+	.
+
+aama:IDdb021961-705b-4f23-885c-c00411a58e14 a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-PSuff ;
+	egm:pos egm:Pronoun ;
+	egm:proClass egm:Suffix ;
+	egm:token "-sy" ;
+	egm:gender egm:Fem ;
+	egm:person egm:Person3 ;
+	egm:number egm:Dual ;
+	.
+
+aama:ID5cc14909-491c-4a4d-9814-37fb61cf1012 a aamas:Term ;
+	aamas:lang aama:Egyptian-middle ;
+	aamas:memberOf egm:egyptian_M-PSuff ;
+	egm:pos egm:Pronoun ;
+	egm:proClass egm:Suffix ;
+	egm:token "-sny" ;
+	egm:gender egm:Common ;
+	egm:person egm:Person3 ;
+	egm:number egm:Dual ;
+	.
