@@ -5,17 +5,18 @@
  :datasource "Gardiner1957 "
  :geodemoURL "http://www.britannica.com/topic/Egyptian-language https://en.wikipedia.org/wiki/Languages_of_Egypt"
  :geodemoTXT "Middle Egyptian is the 'Classic' form of the written language, possibly representing the spoken form of the language in late third and early second millennium BCE."
-:schemata {:gender [:Common :Fem :Masc],
-           :number [:Dual :Plural :Singular],
-           :person [:Person1 :Person2 :Person3],
-           :polarity [:Affirmative],
-           :pos [:Pronoun :Verb],
-           :proClass [:Dependent :Independent :Suffix],
-           :rootClass [:CCC],
-           :stem [:Base :N],
-           :tam [:Imperfective :Preterite :Stative]
-           :vmorphClass [:Finite ]
-           }
+:schemata {:lexeme [:sdm ],
+ :gender [:Common :Fem :Masc],
+ :number [:Dual :Plural :Singular],
+ :person [:Person1 :Person2 :Person3],
+ :polarity [:Affirmative],
+ :pos [:Pronoun :Verb],
+ :proClass [:Dependent :Independent :Suffix],
+ :rootClass [:CCC],
+ :stem [:Base :N],
+ :tam [:Imperfective :Preterite :Stative],
+ :vmorphClass [:Finite]
+ }
  :pclass {:pngClass [:person :number :gender],
           :synsemClass [:pos :proClass],
           :inflClass [:status],
