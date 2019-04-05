@@ -2,7 +2,7 @@
  :lang :egyptian-middle
  :subfamily "Egyptian"
  :sgpref "egm"
- :datasource "Gardiner1957 "
+ :datasource "Gardiner1957; abbrev G57 "
  :geodemoURL "http://www.britannica.com/topic/Egyptian-language https://en.wikipedia.org/wiki/Languages_of_Egypt"
  :geodemoTXT "Middle Egyptian is the 'Classic' form of the written language, possibly representing the spoken form of the language in late third and early second millennium BCE."
 :schemata { :gender [:Common :Fem :Masc],
@@ -26,7 +26,8 @@
 
  :termclusters [
                 {:label "egyptian_M-VAffCCCsdm-f"
-                 :common {:vmorphClass :Finite
+                 :note "G57"
+:common {:vmorphClass :Finite
                           :lexeme :sdm,
                           :polarity :Affirmative,
                           :pos :Verb,
@@ -44,7 +45,8 @@
                          [:Plural :Person3 :Common "sḏm-sn"]]
                  }
                 {:label "egyptian_M-VAffCCCsdm-n-f"
-                 :common {:vmorphClass :Finite
+                 :note "G57"
+:common {:vmorphClass :Finite
                           :lexeme :sdm,
                           :polarity :Affirmative,
                           :pos :Verb,
@@ -62,7 +64,8 @@
                          [:Plural :Person3 :Common "sḏm.n-sn"]]
                  }
                 {:label "egyptian_M-VAffCCCStative"
-                 :common {:vmorphClass :Finite
+                 :note "G57"
+:common {:vmorphClass :Finite
                           :lexeme :sdm,
                           :polarity :Affirmative,
                           :pos :Verb,
@@ -79,7 +82,7 @@
                          [:Plural :Person3 :Common "sḏm-wj"]]
                  }
                 {:label "egyptian_M-PDep"
-                 :note "Alan Gardiner,Egyptian Grammar,3rd Edition (Oxford:Griffith Institute,2001),§43. James E. Hoch,Middle Egyptian Grammar (Mississauga:Benben Publications,1997),§39."
+                 :note "G57 :: Alan Gardiner,Egyptian Grammar,3rd Edition (Oxford:Griffith Institute,2001),§43. James E. Hoch,Middle Egyptian Grammar (Mississauga:Benben Publications,1997),§39."
                  :common {:pos :Pronoun,
                           :proClass :Dependent}
                  :terms [[:number :person :gender :token],
@@ -93,8 +96,8 @@
                          [:Plural :Person3 :Common "sn"]]
                  }
                 {:label "egyptian_M-PInd"
-                 :note "Alan Gardiner,Egyptian Grammar,3rd Edition (Oxford:Griffith Institute,2001),§64. James E. Hoch,Middle Egyptian Grammar (Mississauga:Benben Publications,1997),§56."
-                 :common {:pos :Pronoun,
+                 :note "G57 :: Alan Gardiner,Egyptian Grammar,3rd Edition (Oxford:Griffith Institute,2001),§64. James E. Hoch,Middle Egyptian Grammar (Mississauga:Benben Publications,1997),§56."
+:common {:pos :Pronoun,
                           :proClass :Independent}
                  :terms [[:number :person :gender :token],
                          [:Singular :Person1 :Common "ἰnk"],
@@ -107,7 +110,7 @@
                          [:Plural :Person3 :Common "ntsn"]]
                  }
                 {:label "egyptian_M-PSuff"
-                 :note "Alan Gardiner,Egyptian Grammar,3rd Edition (Oxford:Griffith Institute,2001),§34. James E. Hoch,Middle Egyptian Grammar (Mississauga:Benben Publications,1997),§23. Note existence of the dual set of suffix pronouns."
+                 :note "G57 :: Alan Gardiner,Egyptian Grammar,3rd Edition (Oxford:Griffith Institute,2001),§34. James E. Hoch,Middle Egyptian Grammar (Mississauga:Benben Publications,1997),§23. Note existence of the dual set of suffix pronouns."
                  :common {:pos :Pronoun,
                           :proClass :Suffix}
                  :terms [[:number :person :gender :token],
