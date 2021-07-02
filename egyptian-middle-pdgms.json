@@ -1,0 +1,175 @@
+{
+  "lang": "egyptian-middle",
+  "subfamily": "Egyptian",
+  "sgpref": "egm",
+  "datasource": "Gardiner1957; abbrev G57 ",
+  "geodemoURL": "http://www.britannica.com/topic/Egyptian-language https://en.wikipedia.org/wiki/Languages_of_Egypt",
+  "geodemoTXT": "Middle Egyptian is the ZZClassicZZ form of the written language, possibly representing the spoken form of the language in late third and early second millennium BCE.",
+  "schemata": {
+    "person": [
+      "Person1",
+      "Person2",
+      "Person3"
+    ],
+    "number": [
+      "Dual",
+      "Plural",
+      "Singular"
+    ],
+    "vmorphClass": [
+      "Finite"
+    ],
+    "pos": [
+      "Pronoun",
+      "Verb"
+    ],
+    "proClass": [
+      "Dependent",
+      "Independent",
+      "Suffix"
+    ],
+    "stem": [
+      "Base",
+      "N"
+    ],
+    "polarity": [
+      "Affirmative"
+    ],
+    "tam": [
+      "Imperfective",
+      "Preterite",
+      "Stative"
+    ],
+    "gender": [
+      "Common",
+      "Fem",
+      "Masc"
+    ],
+    "rootClass": [
+      "CCC"
+    ]
+  },
+  "lexemes": {
+    "sdm": {
+      "pos": "Verb",
+      "lemma": "sḏm",
+      "gloss": "hear",
+      "rootClass": "CCC"
+    }
+  },
+  "termclusters": [
+{
+"label": "egyptian_M-VAffCCCsdm-f",
+"note": "G57",
+"common": {"lexeme": "sdm",
+ "polarity": "Affirmative",
+ "pos": "Verb",
+ "rootClass": "CCC",
+ "stem": "Base",
+ "tam": "Imperfective",
+ "vmorphClass": "Finite"},
+"terms":  
+[["number", "person", "gender", "token"],
+ ["Singular", "Person1", "Common", "sḏm-j"],
+ ["Singular", "Person2", "Masc", "sḏm-k"],
+ ["Singular", "Person2", "Fem", "sḏm-ṯ"],
+ ["Singular", "Person3", "Masc", "sḏm-f"],
+ ["Singular", "Person3", "Fem", "sḏm-s"],
+ ["Plural", "Person1", "Common", "sḏm-n"],
+ ["Plural", "Person2", "Common", "sḏmn-ṯn"],
+ ["Plural", "Person3", "Common", "sḏm-sn"]]
+},
+{
+"label": "egyptian_M-VAffCCCsdm-n-f",
+"note": "G57",
+"common": {"lexeme": "sdm",
+ "polarity": "Affirmative",
+ "pos": "Verb",
+ "rootClass": "CCC",
+ "stem": "N",
+ "tam": "Preterite",
+ "vmorphClass": "Finite"},
+"terms":  
+[["number", "person", "gender", "token"],
+ ["Singular", "Person1", "Common", "sḏm.n-j"],
+ ["Singular", "Person2", "Masc", "sḏm.n-k"],
+ ["Singular", "Person2", "Fem", "sḏm.n-ṯ"],
+ ["Singular", "Person3", "Masc", "sḏm.n-f"],
+ ["Singular", "Person3", "Fem", "sḏm.n-s"],
+ ["Plural", "Person1", "Common", "sḏm.n-n"],
+ ["Plural", "Person2", "Common", "sḏm.n-ṯn"],
+ ["Plural", "Person3", "Common", "sḏm.n-sn"]]
+},
+{
+"label": "egyptian_M-VAffCCCStative",
+"note": "G57",
+"common": {"lexeme": "sdm",
+ "polarity": "Affirmative",
+ "pos": "Verb",
+ "rootClass": "CCC",
+ "stem": "Base",
+ "tam": "Stative",
+ "vmorphClass": "Finite"},
+"terms":  
+[["number", "person", "gender", "token"],
+ ["Singular", "Person1", "Common", "sḏm-kw"],
+ ["Singular", "Person2", "Common", "sḏm-tj"],
+ ["Singular", "Person3", "Masc", "sḏm-w"],
+ ["Singular", "Person3", "Fem", "sḏm-tj"],
+ ["Plural", "Person1", "Common", "sḏm-wjn"],
+ ["Plural", "Person2", "Common", "sḏm-tjwnj"],
+ ["Plural", "Person3", "Common", "sḏm-wj"]]
+},
+{
+"label": "egyptian_M-PDep",
+"note": "G57 :: Alan Gardiner,Egyptian Grammar,3rd Edition (Oxford:Griffith Institute,2001),§43. James E. Hoch,Middle Egyptian Grammar (Mississauga:Benben Publications,1997),§39.",
+"common": {"pos": "Pronoun",
+ "proClass": "Dependent"},
+"terms":  
+[["number", "person", "gender", "token"],
+ ["Singular", "Person1", "Common", "wἰ"],
+ ["Singular", "Person2", "Masc", "ṯw ~ tw"],
+ ["Singular", "Person2", "Fem", "ṯn ~ tn"],
+ ["Singular", "Person3", "Masc", "sw"],
+ ["Singular", "Person3", "Fem", "sy ~ s ~ st"],
+ ["Plural", "Person1", "Common", "n"],
+ ["Plural", "Person2", "Common", "ṯn ~ tn"],
+ ["Plural", "Person3", "Common", "sn"]]
+},
+{
+"label": "egyptian_M-PInd",
+"note": "G57 :: Alan Gardiner,Egyptian Grammar,3rd Edition (Oxford:Griffith Institute,2001),§64. James E. Hoch,Middle Egyptian Grammar (Mississauga:Benben Publications,1997),§56.",
+"common": {"pos": "Pronoun",
+ "proClass": "Independent"},
+"terms":  
+[["number", "person", "gender", "token"],
+ ["Singular", "Person1", "Common", "ἰnk"],
+ ["Singular", "Person2", "Masc", "ntk"],
+ ["Singular", "Person2", "Fem", "ntṯ"],
+ ["Singular", "Person3", "Masc", "ntf"],
+ ["Singular", "Person3", "Fem", "nts"],
+ ["Plural", "Person1", "Common", "ἰnn"],
+ ["Plural", "Person2", "Common", "ntṯn ~ nttn"],
+ ["Plural", "Person3", "Common", "ntsn"]]
+},
+{
+"label": "egyptian_M-PSuff",
+"note": "G57 :: Alan Gardiner,Egyptian Grammar,3rd Edition (Oxford:Griffith Institute,2001),§34. James E. Hoch,Middle Egyptian Grammar (Mississauga:Benben Publications,1997),§23. Note existence of the dual set of suffix pronouns.",
+"common": {"pos": "Pronoun", "proClass": "Suffix"},
+"terms":  
+[["number", "person", "gender", "token"],
+ ["Singular", "Person1", "Common", "⊤"],
+ ["Singular", "Person2", "Masc", "-k"],
+ ["Singular", "Person2", "Fem", "-ṯ ~ -t"],
+ ["Singular", "Person3", "Masc", "-f"],
+ ["Singular", "Person3", "Fem", "-s"],
+ ["Plural", "Person1", "Common", "-n"],
+ ["Plural", "Person2", "Common", "-ṯn ~ -tn"],
+ ["Plural", "Person3", "Common", "-sn"],
+ ["Dual", "Person1", "Common", "-ny"],
+ ["Dual", "Person2", "Common", "-ṯny"],
+ ["Dual", "Person3", "Masc", "-fy"],
+ ["Dual", "Person3", "Fem", "-sy"],
+ ["Dual", "Person3", "Common", "-sny"]]
+}]
+}
